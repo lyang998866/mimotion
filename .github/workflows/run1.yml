@@ -27,6 +27,6 @@ jobs:
         run: |
           pip3 install requests
           user='${{ secrets.USER1 }}'
-          passwd='${{ secrets.PWD1 }}' 
-          sckey='${{ secrets.SCKEY1 }}'
+          passwd='${{ secrets.PWD }}' 
+          sckey='${{ secrets.SCKEY }}'
           python3 githubRun.py ${user} ${passwd} ${sckey}
