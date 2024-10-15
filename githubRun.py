@@ -11,7 +11,7 @@ def get_time_stamp():
 
     :return: 时间戳
     """
-    url = 'http://api.m.taobao.com/rest/api3.do?api=mtop.common.getTimestamp'
+    url = 'https://sapi.k780.com/?app=life.time&appkey=10003&sign=b59bc3ef6191eb9f747dd4e83c99f2a4&format=json'
     response = requests.get(url).json()
     t = response['data']['t']
     return t
